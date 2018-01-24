@@ -1,0 +1,5 @@
+slices <- c(sum(table_final$Positive),sum(table_final$Negative))
+labels <- c("Positive","Negative")
+library(plotrix)
+pie(slices, labels = labels, col=rainbow(length(labels)),main="R Sentiment Analysis")
+pie3D(slices, labels = labels, col=rainbow(length(labels)), explode = 0.00,main="R Sentiment Analysis")
